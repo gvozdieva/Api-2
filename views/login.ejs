@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login</title>
+  <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+  <link rel="stylesheet" href="/styles/main.css">
+</head>
+<body>
+  <hr>
+  <form name="loginForm">
+    <input type="text" name="login" placeholder="login">
+    <input type="password" name="pwd" placeholder="password">
+
+    <button type="submit">sign in</button>
+  </form>
+  
+  <script>
+    const elForm = document.forms['loginForm'];
+    console.log( elForm );
+    elForm.addEventListener('submit', async (ev) => {
+      ev.preventDefault();
+      const formData = new FormData(ev.target);
+      const { data } = await axios.post('/auth/login', formData); 
+    })
+  </script>
+</body>
+</html>

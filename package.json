@@ -1,0 +1,40 @@
+{
+  "name": "baseapp",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "start": "cross-env NODE_PATH=. node ./bin/www",
+    "devstart": "cross-env NODE_PATH=. NODE_ENV=development node --inspect=9898 ./bin/www"
+  },
+  "dependencies": {
+    "ajv": "^6.12.0",
+    "bcrypt": "^5.0.0",
+    "cookie-parser": "~1.4.3",
+    "debug": "~2.6.9",
+    "ejs": "^2.5.9",
+    "express": "~4.16.0",
+    "fs": "0.0.1-security",
+    "fs-extra": "^8.1.0",
+    "helmet": "^3.21.3",
+    "http-errors": "~1.6.2",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^5.9.5",
+    "morgan": "~1.9.0",
+    "multer": "^1.4.2",
+    "nconf": "^0.10.0",
+    "node-sass-middleware": "^0.11.0",
+    "path": "^0.12.7",
+    "uid": "^1.0.0",
+    "uniqid": "^5.2.0",
+    "uuid": "^8.2.0",
+    "ws": "^7.2.5"
+  },
+  "devDependencies": {
+    "babel-eslint": "^10.0.1",
+    "eslint": "^5.9.0",
+    "eslint-config-airbnb": "^17.1.0",
+    "eslint-plugin-import": "^2.14.0",
+    "eslint-plugin-jsx-a11y": "^6.1.2",
+    "eslint-plugin-react": "^7.11.1"
+  }
+}

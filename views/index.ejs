@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+  <link rel="stylesheet" href="/styles/main.css">
+</head>
+<body>
+  <hr>
+  <h1>Article create</h1>
+  <form action="post" name="articleCreate">
+    <input type="text" name="title" placeholder="TITLE">
+    <br><textarea name="content" placeholder="CONTENT"></textarea>
+    <button type="submit">SAVE</button>
+  </form>
+  <div class="super-err hide">ВСЕ ПОЛОМАЛИ !</div>
+  <hr>
+
+  <h2>Article List</h2>
+  <ul class="articleList"></ul>
+  <hr>
+
+  <script src="/js/main.js"></script>
+</body>
+</html>
